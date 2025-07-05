@@ -13,17 +13,18 @@ html, body {
   display: flex;
   flex: 1;
   align-items: stretch;
+  height: 100%;
 }
 
 .layout app-sidebar {
-  width: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;  /* Key: pushes top/bottom apart */
+  justify-content: space-between;
+  align-items: stretch;
   background-color: #f0f0f0;
   padding: 1rem;
   box-sizing: border-box;
-  height: 100%; /* Critical for full vertical stretch */
+  flex: 0 0 200px;
 }
 
 .content {
